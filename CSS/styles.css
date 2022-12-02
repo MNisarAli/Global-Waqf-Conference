@@ -296,6 +296,10 @@ hr {
     line-height: normal;
     color: #5a5a5a;
   }
+  
+  .nav-item.orange { 
+    color: #ec5242;
+  }
 
   .campaign .nav-item {
     font-size: 0.8rem;
