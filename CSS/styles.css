@@ -94,46 +94,45 @@ a.nav-item {
 }
 
 p.welcome {
-  color: #ec5242;
-  font-weight: 400;
   font-size: 1.25rem;
+  font-weight: 400;
+  color: #ec5242;
 }
 
 h1 {
+  font-size: 32px;
+  font-weight: 900;
   -webkit-background-clip: text;
   background-image: url(../Images/Backgrounds/title-bg.png);
   color: transparent;
-  font-weight: 900;
-  font-size: 32px;
 }
 
 p.intro {
-  width: 650px;
-  max-width: 100%;
-  background-color: whitesmoke;
+  font-size: 12px;
+  line-height: 1.2rem;
   color: #5a5a5a;
+  background-color: whitesmoke;
   border: 2px solid white;
   padding: 0.7rem;
   margin: 0.7rem 0;
-  line-height: 1.2rem;
-  font-size: 12px;
+  width: 650px;
+  max-width: 100%;
 }
 
 .headline h2 {
-  line-height: 2.2rem;
   font-size: 1.3rem;
-  color: #5b5b5b;
   font-weight: 900;
+  line-height: 2.2rem;
+  color: #5b5b5b;
 }
 
 p.venu {
+  font-size: 1rem;
   font-weight: 400;
   color: #5b5b5b;
-  font-size: 1rem;
 }
 
 #main-program {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -141,6 +140,7 @@ p.venu {
   background-color: #272a31;
   background-size: 1.6rem;
   padding: 2rem 0.8rem;
+  width: 100%;
   gap: 1rem;
 }
 
@@ -163,18 +163,18 @@ hr {
 .program-info {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
   margin: 1rem 0;
+  gap: 0.5rem;
 }
 
 .program-info li {
   display: flex;
   align-items: center;
-  padding: 1rem 0.5rem;
-  gap: 0.6rem;
   background-color: rgba(255, 255, 255, 0.1);
   transition: all 400ms linear 0.1ms;
+  padding: 1rem 0.5rem;
   min-height: 5.5rem;
+  gap: 0.6rem;
 }
 
 .program-info img {
@@ -189,20 +189,19 @@ hr {
 .program-info p {
   align-items: center;
   font-size: 0.875rem;
-  color: #d3d3d3;
   line-height: 1.2rem;
-  font-weight: normal;
+  color: #d3d3d3;
   flex: 4;
 }
 
 #join-btn {
   font-size: 1rem;
-  padding: 1.5rem;
-  border: none;
-  cursor: pointer;
-  background-color: #ec5242;
   color: #fff;
+  background-color: #ec5242;
   transition: all 400ms linear 0.1ms;
+  padding: 1.5rem;
+  cursor: pointer;
+  border: none;
 }
 
 .featured-speakers {
@@ -214,25 +213,24 @@ hr {
 }
 
 .more-speakers {
-  background-color: #fff;
-  border: 1px solid #5a5a5a;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  background-color: #fff;
+  border: 1px solid #5a5a5a;
+  border-radius: 3px;
   padding: 0.7rem 0;
   margin-top: 1rem;
+  width: 100%;
   gap: 0.5rem;
-  border-radius: 3px;
 }
 
 .fa-chevron-down {
-  color: #ec5242;
   font-size: 1rem;
+  color: #ec5242;
 }
 
 @media screen and (min-width: 768px) {
-
   .hamburger,
   #join-btn,
   .more-speakers {
@@ -250,11 +248,11 @@ hr {
 
   .top-nav ul {
     display: flex;
-    background-color: #3e3e3e;
     justify-content: right;
     align-items: center;
-    gap: 1.5rem;
+    background-color: #3e3e3e;
     padding: 0 11%;
+    gap: 1.5rem;
   }
 
   .fa-brands {
@@ -262,10 +260,10 @@ hr {
   }
 
   .top-nav a {
-    color: #d3d3d3;
     font-size: 0.8rem;
     text-decoration: none;
     line-height: 1.6rem;
+    color: #d3d3d3;
   }
 
   .bottom-nav {
@@ -278,13 +276,13 @@ hr {
   }
 
   .nav-menu {
+    left: auto;
+    width: auto;
+    height: auto;
     position: initial;
     flex-direction: row;
-    left: auto;
-    height: auto;
-    width: auto;
-    padding: 0;
     background: none;
+    padding: 0;
     flex: 3;
   }
 
@@ -294,24 +292,24 @@ hr {
   }
 
   a.nav-item {
-    color: #5a5a5a;
     font-size: 1rem;
     line-height: normal;
+    color: #5a5a5a;
   }
 
   .campaign .nav-item {
-    color: #ec5242;
-    border: 4px solid #ec5242;
     font-size: 0.8rem;
     font-weight: 500;
+    color: #ec5242;
+    border: 4px solid #ec5242;
     padding: 0.5rem;
   }
 
   .headline {
-    padding: 6rem 11%;
     background-image: url(../Images/Backgrounds/home-bg-desk.png);
     background-repeat: no-repeat;
     background-size: 100%;
+    padding: 6rem 11%;
   }
 
   p.welcome {
@@ -323,8 +321,8 @@ hr {
   }
 
   p.intro {
-    max-width: 73%;
     font-size: 0.9rem;
+    max-width: 73%;
   }
 
   .headline h2 {
@@ -353,12 +351,12 @@ hr {
 
   .program-info li {
     flex-direction: column;
-    flex: 1;
-    height: auto;
     text-align: center;
-    min-height: 14rem;
     padding: 1.5rem 0.9rem;
+    height: auto;
+    min-height: 14rem;
     gap: 1rem;
+    flex: 1;
   }
 
   .program-info img {
@@ -372,12 +370,12 @@ hr {
 
   .whole-program-btn {
     display: block;
-    color: #d3d3d3;
     font-size: 0.8rem;
     font-weight: 400;
     text-transform: uppercase;
     text-underline-position: under;
     line-height: 4rem;
+    color: #d3d3d3;
   }
 
   .featured-speakers {
@@ -398,8 +396,8 @@ hr {
   }
 
   #sponsor h2 {
-    color: #d3d3d3;
     font-size: 1.5rem;
+    color: #d3d3d3;
   }
 
   .partner-logo {
@@ -432,23 +430,23 @@ hr {
 /* About Page CSS */
 
 .about-main {
-  background-color: whitesmoke;
-  background-image: url(../Images/Backgrounds/about-bg.png);
-  padding: 4rem 1.5rem 1.5rem;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position-y: 2.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-color: whitesmoke;
+  background-image: url(../Images/Backgrounds/about-bg.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: 2.5rem;
+  padding: 4rem 1.5rem 1.5rem;
 }
 
 .about-main h1 {
-  color: #ec5242;
-  margin: 0.5rem 0;
   font-size: 2rem;
   font-weight: 900;
+  color: #ec5242;
+  margin: 0.5rem 0;
 }
 
 .about-main hr,
@@ -457,41 +455,39 @@ hr {
 }
 
 p.about-info {
-  width: 650px;
-  max-width: 100%;
-  background-color: #fff;
+  font-size: 0.85rem;
+  line-height: 1.4rem;
   color: #5a5a5a;
+  background-color: #fff;
   border: 1px solid #d3d3d3;
   padding: 1rem 0.7rem;
   margin: 1rem 0;
-  line-height: 1.4rem;
-  font-size: 0.85rem;
+  width: 650px;
+  max-width: 100%;
 }
 
 p.contact {
-  color: #5a5a5a;
-  line-height: 1.4rem;
   font-size: 0.85rem;
+  line-height: 1.4rem;
+  color: #5a5a5a;
 }
 
 .about-main a {
   display: block;
-  color: #272a31;
   font-size: 0.85rem;
   font-weight: 700;
   text-underline-position: under;
   line-height: 1.5rem;
+  color: #272a31;
 }
-
-
 
 .about-logo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2.5rem 1.5rem;
-  border-bottom: 1px solid #d3d3d3;
   text-align: center;
+  border-bottom: 1px solid #d3d3d3;
+  padding: 2.5rem 1.5rem;
   gap: 1rem;
 }
 
@@ -520,8 +516,8 @@ p.contact {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2.5rem;
   text-align: center;
+  padding: 2.5rem;
   gap: 1rem;
 }
 
@@ -558,11 +554,11 @@ p.contact {
 .images-container div {
   display: flex;
   flex-direction: column;
-  gap: 0.3rem;
   background-color: rgb(240 80 50 / 75%);
+  transition: all 0.3s ease;
   padding: 4.5rem 0;
   cursor: pointer;
-  transition: all 0.3s ease;
+  gap: 0.3rem;
 }
 
 .images-container h3 {
@@ -585,8 +581,8 @@ p.contact {
 }
 
 #partner h2 {
-  color: #d3d3d3;
   font-size: 1.5rem;
+  color: #d3d3d3;
 }
 
 .partner-logo {
@@ -665,8 +661,8 @@ p.contact {
   }
 
   .logo-container {
-    margin: 1.5rem;
     padding: 1.4rem 4rem;
+    margin: 1.5rem;
   }
 
   .past-events {
@@ -686,17 +682,15 @@ p.contact {
     width: 380px;
   }
 
-
-
   .footer-about {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 0.7rem;
-    padding: 0;
-    height: 10rem;
     background-color: #272a31;
     color: #d3d3d3;
+    height: 10rem;
+    padding: 0;
   }
 }
 
@@ -705,10 +699,9 @@ p.contact {
 .speakers-info {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
   margin-top: 1.5rem;
+  gap: 2rem;
 }
-
 
 .speakers-info li {
   display: flex;
@@ -742,15 +735,15 @@ p.contact {
 .speaker-details {
   display: flex;
   flex-direction: column;
-  flex: 2.5;
   gap: 0.5rem;
+  flex: 2.5;
 }
 
 .speaker-position {
-  color: #ec5242;
   font-size: 0.82rem;
-  line-height: 1.2rem;
   font-weight: 600;
+  line-height: 1.2rem;
+  color: #ec5242;
 }
 
 hr.grey-line {
@@ -760,15 +753,15 @@ hr.grey-line {
 }
 
 .speaker-intro {
-  line-height: 1.2rem;
   font-size: 0.8rem;
+  line-height: 1.2rem;
 }
 
 @media screen and (min-width: 768px) {
   .speakers-info {
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
   }
 
   .speakers-info li {
