@@ -297,7 +297,7 @@ hr {
     color: #5a5a5a;
   }
 
-  .nav-item.orange { 
+  .nav-item.orange {
     color: #ec5242;
   }
 
@@ -363,14 +363,6 @@ hr {
     flex: 1;
   }
 
-  .program-info li:hover {
-    border: 2px solid #fff;
-  }
-
-  .program-info img {
-    width: 2.8rem;
-  }
-
   .program-info h3,
   .program-info p {
     flex: none;
@@ -420,9 +412,8 @@ hr {
     align-items: center;
   }
 
-  .partner-logo img {
-    max-width: 8rem;
-    filter: grayscale(100%) contrast(40%);
+  .program-info li:hover {
+    border: 2px solid #fff;
   }
 
   footer {
@@ -437,6 +428,15 @@ hr {
 
   footer img {
     width: 10rem;
+  }
+
+  .program-info img {
+    width: 2.8rem;
+  }
+
+  .partner-logo img {
+    max-width: 8rem;
+    filter: grayscale(100%) contrast(40%);
   }
 }
 
