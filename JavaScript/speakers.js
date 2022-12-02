@@ -41,8 +41,7 @@ const speakers = document.querySelector('.speakers-info');
 
 speakersInfo.forEach((speaker) => {
   const li = document.createElement('li');
-  li.innerHTML = 
-  ` <div class="speaker-image">
+  li.innerHTML = ` <div class="speaker-image">
       <img src="${speaker.image}" alt="${speaker.name}'s photo">
     </div>
     <div class="speaker-details">
@@ -64,4 +63,3 @@ showMoreSpeakers.addEventListener('click', () => {
   }
   showMoreSpeakers.style.display = 'none';
 });
-
