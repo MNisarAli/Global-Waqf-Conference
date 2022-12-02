@@ -296,7 +296,7 @@ hr {
     line-height: normal;
     color: #5a5a5a;
   }
-  
+
   .nav-item.orange { 
     color: #ec5242;
   }
@@ -361,6 +361,10 @@ hr {
     min-height: 14rem;
     gap: 1rem;
     flex: 1;
+  }
+
+  .program-info li:hover {
+    border: 2px solid #fff;
   }
 
   .program-info img {
