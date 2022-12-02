@@ -432,6 +432,11 @@ hr {
     font-size: 0.7rem;
     padding: 0;
     height: 10rem;
+    gap: 2.5rem;
+  }
+
+  footer img {
+    width: 10rem;
   }
 }
 
