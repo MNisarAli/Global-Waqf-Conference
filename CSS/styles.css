@@ -616,10 +616,18 @@ p.contact {
 }
 
 .footer-about {
-  display: block;
-  font-size: 0.5rem;
-  text-align: center;
-  padding: 2rem 23% 3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 2rem 12% 3rem;
+}
+
+.footer-about img {
+  width: 8rem;
+}
+
+.footer-about h2 {
+  font-size: 0.6rem;
 }
 
 @media screen and (min-width: 768px) {
