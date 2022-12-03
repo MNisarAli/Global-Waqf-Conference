@@ -593,11 +593,6 @@ p.contact {
   gap: 1.5rem;
 }
 
-#partner h2 {
-  font-size: 1.5rem;
-  color: #d3d3d3;
-}
-
 .partner-logo {
   display: flex;
   justify-content: center;
@@ -628,6 +623,11 @@ p.contact {
 
 .footer-about h2 {
   font-size: 0.6rem;
+}
+
+#partner h2 {
+  font-size: 1.5rem;
+  color: #d3d3d3;
 }
 
 @media screen and (min-width: 768px) {
