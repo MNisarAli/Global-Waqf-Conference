@@ -712,6 +712,15 @@ p.contact {
     color: #d3d3d3;
     height: 10rem;
     padding: 0;
+    gap: 2.5rem;
+  }
+
+  .footer-about img {
+    width: 10rem;
+  }
+
+  .footer-about h2 {
+    font-size: medium;
   }
 }
 
