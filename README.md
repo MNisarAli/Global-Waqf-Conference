@@ -58,8 +58,6 @@ This year's conference serves as a platform to establish clarity, explore the bo
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Link to deployed project.
-
 - [Live Demo Link](https://mnisarali.github.io/Global-Waqf-Conference/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -67,8 +65,6 @@ This year's conference serves as a platform to establish clarity, explore the bo
 <!-- VIDEO WALKTHROUGH -->
 
 ## 📹 Video Walkthrough <a name="video-walkthrough"></a>
-
-> Link to video presentation.
 
 - [loom video link](https://www.loom.com/share/49d1811e5446450f8989e5e09b693fde)
 
@@ -85,8 +81,8 @@ This year's conference serves as a platform to establish clarity, explore the bo
 
 In order to run this project you need:
 
-- [x] A web browser like Google Chrome.
-- [x] A code editor like Visual Studio Code with Git and Node.js installed.
+- [x] A web browser (like Google Chrome, Opera...).
+- [x] A code editor (like Atom, VScode...). with Git and Node.js installed.
 
 ### Setup
 
@@ -108,7 +104,7 @@ cd Global-Waqf-Conference
 
 ## 👥 Authors <a name="authors"></a>
 
-👨‍ **M Nisar Ali**
+👨‍🚀 **M Nisar Ali**
 
 - GitHub: [@MNisarAli](https://github.com/MNisarAli)
 - Gmail: [@dr.nisaralig@gmail.com](mailto:dr.nisaralig@gmail.com)
@@ -139,7 +135,7 @@ Feel free to check the [issues page](https://github.com/MNisarAli/Global-Waqf-Co
 
 ## 💖 Show your support <a name="support"></a>
 
-Give a ⭐️, if you like this project!, and follow me on [GitHub](https://github.com/MNisarAli) & LinkedIn [LinkedIn](https://www.linkedin.com/in/muhammad-nisar-ali).
+Give a ⭐️, if you like this project!, and follow me on [GitHub](https://github.com/MNisarAli) & [LinkedIn](https://www.linkedin.com/in/muhammad-nisar-ali).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -147,9 +143,9 @@ Give a ⭐️, if you like this project!, and follow me on [GitHub](https://gith
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank:
-- [Microverseinc](https://github.com/microverseinc) for [Readme-template](https://github.com/microverseinc/readme-template).
+- I would like to thank [Microverseinc](https://github.com/microverseinc) for [Readme-template](https://github.com/microverseinc/readme-template).
 - Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07).
+- Hat tip to all code reviewers and to everyone who reviewed this project and made suggestions.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
