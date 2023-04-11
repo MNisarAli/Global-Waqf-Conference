@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Cocogoose&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 * {
   box-sizing: border-box;
   list-style: none;
@@ -9,6 +12,7 @@
 .top-nav,
 .campaign,
 .logo,
+.logo-image,
 .whole-program-btn,
 #sponsor,
 footer {
@@ -239,6 +243,7 @@ hr {
 
   .top-nav,
   .logo,
+  .logo-image,
   .campaign,
   .whole-program-btn,
   #sponsor,
@@ -270,7 +275,8 @@ hr {
     padding: 0 11%;
   }
 
-  .logo {
+  .logo,
+  .logo-image {
     width: 10rem;
     flex: 2;
   }
@@ -617,8 +623,12 @@ p.contact {
   padding: 2rem 12% 3rem;
 }
 
-.footer-about img {
+.footer-logo-main {
   width: 8rem;
+}
+
+.footer-logo-white {
+  display: none;
 }
 
 .footer-about h2 {
@@ -638,8 +648,9 @@ p.contact {
     padding: 4rem;
   }
 
-  .welcome,
-  #partner {
+  .about-main .welcome,
+  #partner,
+  .footer-logo-main {
     display: none;
   }
 
@@ -682,6 +693,7 @@ p.contact {
   }
 
   .logo-container {
+    max-width: 35rem;
     padding: 1.4rem 4rem;
     margin: 1.5rem;
   }
@@ -715,7 +727,8 @@ p.contact {
     gap: 2.5rem;
   }
 
-  .footer-about img {
+  .footer-logo-white {
+    display: block;
     width: 10rem;
   }
 
