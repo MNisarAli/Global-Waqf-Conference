@@ -1,13 +1,17 @@
-const hamburger = document.querySelector('.hamburger');
-const menu = document.querySelector('.nav-menu');
+// Select hamburger button and navigation menu.
+const hamburgerButton = document.querySelector('.hamburger');
+const navigationMenu = document.querySelector('#navigation-menu');
 
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
-  menu.classList.toggle('active');
+// Toggle the navigation menu when the hamburger button is clicked.
+hamburgerButton.addEventListener('click', () => {
+  const expanded = hamburgerButton.getAttribute('aria-expanded') === 'true' || false;
+  hamburgerButton.setAttribute('aria-expanded', !expanded);
+  navigationMenu.classList.toggle('active');
 });
 
+// Close the navigation menu when a link is clicked.
 const links = document.querySelectorAll('.nav-item');
 links.forEach((link) => link.addEventListener('click', () => {
-  hamburger.classList.remove('active');
-  menu.classList.remove('active');
+  hamburgerButton.setAttribute('aria-expanded', false);
+  navigationMenu.classList.remove('active');
 }));
