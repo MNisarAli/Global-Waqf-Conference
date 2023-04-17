@@ -14,28 +14,28 @@
 
 <body>
   <header>
-    <div class="top-nav">
+    <nav class="top-nav" aria-label="Social Links">
       <ul>
-        <li><a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
-        <li><a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
         <li><a href="#">English</a></li>
         <li><a href="#">My Page</a></li>
         <li><a href="#">LogOut</a></li>
       </ul>
-    </div>
+    </nav>
 
-    <div class="hamburger">
+    <button class="hamburger" type="button" aria-label="Menu Button" aria-controls="navigation-menu" aria-expanded="false">
       <span class="bar"></span>
       <span class="bar"></span>
       <span class="bar"></span>
-    </div>
+    </button>
 
-    <nav class="bottom-nav">
-      <div class="logo">
-        <a href="./index.html"><img class="logo-image" src="./Images/gwc-logo-main.png" alt="Global Waqf Conference logo"></a>
-      </div>
-      <ul class="nav-menu">
-        <li><a class="nav-item orange" href="./about.html">About</a></li>
+    <nav class="bottom-nav" aria-label="Main Navigation">
+      <a href="./index.html" class="logo" title="Global Waqf Conference">
+        <img class="logo-image" src="./Images/gwc-logo-main.png" alt="Global Waqf Conference logo">
+      </a>
+      <ul class="nav-menu" id="navigation-menu" aria-label="Navigation Menu">
+        <li><a class="nav-item" href="./about.html">About</a></li>
         <li><a class="nav-item" href="#main-program">Program</a></li>
         <li><a class="nav-item" href="#join-btn">Join</a></li>
         <li><a class="nav-item" href="#speakers">Speakers</a></li>
