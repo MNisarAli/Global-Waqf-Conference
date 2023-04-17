@@ -106,8 +106,10 @@ p.welcome {
 h1 {
   font-size: 32px;
   font-weight: 900;
-  -webkit-background-clip: text;
   background-image: url(../Images/Backgrounds/title-bg.png);
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   color: transparent;
 }
 
