@@ -5,34 +5,40 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./CSS/styles.css">
-  <link rel="stylesheet" type="text/css"
-    href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" />
+  <meta name="description"
+    content="10th Global Waqf Conference is the premier Waqf forum that create awareness, develops new and innovative ideas, and ensures the principles of good Waqf governance are widely disseminated and put into practice by people, businesses and leaders as a whole. Join the conference on 2022.12.02(FRI) ~ 04(SUN) at Islamia University, Bahawalpur, Pakistan.">
+  <link rel="stylesheet" href="./CSS/main.css">
+  <link rel="stylesheet" href="./CSS/header.css">
+  <link rel="icon" href="./Images/favicon.png">
   <title>GWC 2022 | About</title>
 </head>
 
 <body>
   <header>
-    <div class="top-nav">
+    <!-- Top Navigation bar for social links -->
+    <nav class="top-nav" aria-label="Social Links">
       <ul>
-        <li><a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
-        <li><a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
         <li><a href="#">English</a></li>
         <li><a href="#">My Page</a></li>
         <li><a href="#">LogOut</a></li>
       </ul>
-    </div>
-    <div class="hamburger">
+    </nav>
+
+    <!-- Hamburger button for mobile navigation -->
+    <button class="hamburger" type="button" aria-label="Menu Button" aria-controls="navigation-menu" aria-expanded="false">
       <span class="bar"></span>
       <span class="bar"></span>
       <span class="bar"></span>
-    </div>
-    <nav class="bottom-nav">
-      <div class="logo">
-        <a href="./index.html"><img class="logo" src="./Images/globalwaqf-logo.png"
-            alt="Global Waqf Conference logo"></a>
-      </div>
-      <ul class="nav-menu">
+    </button>
+
+    <!-- Bottom Navigation bar for main navigation -->
+    <nav class="bottom-nav" aria-label="Main Navigation">
+      <a href="./index.html" class="logo" title="Global Waqf Conference">
+        <img class="logo-image" src="./Images/gwc-logo-main.png" alt="Global Waqf Conference logo">
+      </a>
+      <ul class="nav-menu" id="navigation-menu" aria-label="Navigation Menu">
         <li><a class="nav-item" href="./index.html">Home</a></li>
         <li><a class="nav-item" href="./index.html#main-program">Program</a></li>
         <li><a class="nav-item" href="./index.html#join-btn">Join</a></li>
@@ -42,7 +48,9 @@
       </ul>
     </nav>
   </header>
+
   <main>
+    <!-- Introductory information about the conference. -->
     <section class="about-main">
       <p class="welcome">"Hi! Sharing world"</p>
       <h1>10th GLOBAL WAQF <br>CONFERENCE 2022</h1>
@@ -62,17 +70,18 @@
       </span>
     </section>
 
+    <!-- About the logo of the conference. -->
     <section class="about-logo">
       <h2>Global Waqf Conference 2022 Logo</h2>
       <hr>
-
       <p>The undermentioned Logo of Global Waqf Conference was designed on 29 Novemver by Dr.Nisar Ali for use at this
         site only.It is pertinent to mention that this is not the orignal Logo of GWC 2022.</p>
       <div class="logo-container">
-        <img src="./Images/globalwaqf-logo.png" alt="Global Waqf Conference Logo">
+        <img src="./Images/gwc-logo-main.png" alt="Global Waqf Conference Logo">
       </div>
     </section>
 
+    <!-- Past Global Waqf Conferences. -->
     <section class="past-events">
       <h2>See the past Global Waqf Conferences</h2>
       <hr>
@@ -91,30 +100,30 @@
           </div>
         </li>
       </ul>
-
-
     </section>
 
+    <!-- Section for partner information -->
     <section id="partner">
       <h2>Partner</h2>
       <hr>
+      <!-- List of partner logos -->
       <ul class="partner-logo">
-        <li><img src="./Images/partners/Finterra-logo.png" alt="Finterra-logo"></li>
-        <li><img src="./Images/partners/mmu-logo.png" alt="mmu-logo"></li>
-        <li><img src="./Images/partners/fsmmu-logo.png" alt="fsmmu-logo"></li>
-        <li><img src="./Images/partners/isdb-logo.png" alt="isdb-logo"></li>
-        <li><img src="./Images/partners/iub-logo.png" alt="iub-logo"></li>
+        <li><img src="./Images/partners/Finterra-logo.png" alt="Finterra Logo"></li>
+        <li><img src="./Images/partners/mmu-logo.png" alt="Multi Media University Logo"></li>
+        <li><img src="./Images/partners/fsmmu-logo.png" alt="Fatih Sultan Mehmet Vakif University Logo"></li>
+        <li><img src="./Images/partners/isdb-logo.png" alt="Islamic Developement Bank Logo"></li>
+        <li><img src="./Images/partners/iub-logo.png" alt="Islamia University Bahawalpur Logo"></li>
       </ul>
     </section>
   </main>
 
   <footer class="footer-about">
-    <img src="./Images/globalwaqf-logo.png" alt="globalwaqf-logo">
+    <img class="footer-logo-main" src="./Images/gwc-logo-main.png" alt="Global Waqf Conference logo">
+    <img class="footer-logo-white" src="./Images/gwc-logo-white.png" alt="Global Waqf Conference logo">
     <h2>© 2022 Global Waqf Conference. Some Rights Reserved.</h2>
   </footer>
 
   <!-- JavaScript -->
-
   <script src="./JavaScript/ham-menu.js"></script>
   <script src="https://kit.fontawesome.com/5504ff3ed9.js" crossorigin="anonymous"></script>
 </body>

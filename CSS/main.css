@@ -1,86 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Cocogoose&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root {
+  --color-primary: #ec5242;
+  --color-secondary: #272a31;
+  --color-light: #fff;
+}
+
 * {
   box-sizing: border-box;
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+body {
   font-family: "Lato", Helvetica, sans-serif;
 }
 
-.top-nav,
-.campaign,
-.logo,
 .whole-program-btn,
 #sponsor,
 footer {
   display: none;
-}
-
-.bottom-nav {
-  display: flex;
-}
-
-.hamburger {
-  z-index: 100;
-  position: absolute;
-  left: 1.5rem;
-  top: 1rem;
-}
-
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  transition: all 0.3s ease-in-out;
-  background-color: #272a31;
-}
-
-.hamburger.active {
-  position: fixed;
-}
-
-.hamburger.active .bar:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
-}
-
-.hamburger.active .bar:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
-}
-
-.hamburger.active .bar:nth-child(2) {
-  opacity: 0;
-}
-
-.nav-menu {
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  left: -100%;
-  height: 100vh;
-  width: 100%;
-  text-align: center;
-  transition: all 0.3s ease-in-out;
-  padding: 8rem 0;
-  justify-content: space-between;
-  background: #ec5242;
-}
-
-.nav-menu li {
-  border-bottom: 1px solid #5a5a5a;
-  width: 80%;
-}
-
-a.nav-item {
-  text-decoration: none;
-  font-size: 2rem;
-  color: #fff;
-  line-height: 5rem;
-}
-
-.nav-menu.active {
-  left: 0;
-  z-index: 99;
 }
 
 .headline {
@@ -90,27 +31,32 @@ a.nav-item {
   background-image: url(../Images/Backgrounds/home-bg.png);
   background-repeat: no-repeat;
   background-size: 100%;
-  padding: 5.7rem 18px 2.2rem;
+  padding: 5.7rem 18px 3.5rem;
 }
 
 p.welcome {
   font-size: 1.25rem;
   font-weight: 400;
-  color: #ec5242;
+  color: var(--color-primary);
+  padding-bottom: 5px;
 }
 
 h1 {
-  font-size: 32px;
+  font-family: 'COCOGOOSE', sans-serif;
+  font-size: 30px;
   font-weight: 900;
-  -webkit-background-clip: text;
   background-image: url(../Images/Backgrounds/title-bg.png);
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   color: transparent;
+  line-height: 1;
 }
 
 p.intro {
   font-size: 12px;
   line-height: 1.2rem;
-  color: #5a5a5a;
+  color: var(--color-secondary);
   background-color: whitesmoke;
   border: 2px solid white;
   padding: 0.7rem;
@@ -123,13 +69,13 @@ p.intro {
   font-size: 1.3rem;
   font-weight: 900;
   line-height: 2.2rem;
-  color: #5b5b5b;
+  color: var(--color-secondary);
 }
 
 p.venu {
   font-size: 1rem;
   font-weight: 400;
-  color: #5b5b5b;
+  color: var(--color-secondary);
 }
 
 #main-program {
@@ -137,7 +83,7 @@ p.venu {
   flex-direction: column;
   align-items: center;
   background-image: url(../Images/Backgrounds/program-bg.png);
-  background-color: #272a31;
+  background-color: var(--color-secondary);
   background-size: 1.6rem;
   padding: 2rem 0.8rem;
   width: 100%;
@@ -154,8 +100,8 @@ p.venu {
 }
 
 hr {
-  background-color: #ec5242;
-  border: 0.2px solid #ec5242;
+  background-color: var(--color-primary);
+  border: 0.2px solid var(--color-primary);
   border-radius: 2px;
   width: 35px;
 }
@@ -171,7 +117,7 @@ hr {
   display: flex;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.1);
-  transition: all 400ms linear 0.1ms;
+  transition: all 0.3s ease-in-out;
   padding: 1rem 0.5rem;
   min-height: 5.5rem;
   gap: 0.6rem;
@@ -182,7 +128,7 @@ hr {
 }
 
 .program-info h3 {
-  color: #ec5242;
+  color: var(--color-primary);
   flex: 2;
 }
 
@@ -196,8 +142,8 @@ hr {
 
 #join-btn {
   font-size: 1rem;
-  color: #fff;
-  background-color: #ec5242;
+  color: var(--color-light);
+  background-color: var(--color-primary);
   transition: all 400ms linear 0.1ms;
   padding: 1.5rem;
   cursor: pointer;
@@ -216,8 +162,8 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
-  border: 1px solid #5a5a5a;
+  background-color: var(--color-light);
+  border: 1px solid var(--color-secondary);
   border-radius: 3px;
   padding: 0.7rem 0;
   margin-top: 1rem;
@@ -225,88 +171,26 @@ hr {
   gap: 0.5rem;
 }
 
-.fa-chevron-down {
+.fa-chevron-down,
+.fa-chevron-up {
   font-size: 1rem;
-  color: #ec5242;
+  color: var(--color-primary);
 }
 
 @media screen and (min-width: 768px) {
-  .hamburger,
   #join-btn,
   .more-speakers {
     display: none;
   }
 
-  .top-nav,
-  .logo,
-  .campaign,
   .whole-program-btn,
   #sponsor,
   footer {
     display: block;
   }
 
-  .top-nav ul {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    background-color: #3e3e3e;
-    padding: 0 11%;
-    gap: 1.5rem;
-  }
-
-  .fa-brands {
-    color: #d3d3d3;
-  }
-
-  .top-nav a {
-    font-size: 0.8rem;
-    text-decoration: none;
-    line-height: 1.6rem;
-    color: #d3d3d3;
-  }
-
-  .bottom-nav {
-    padding: 0 11%;
-  }
-
-  .logo {
-    width: 10rem;
-    flex: 2;
-  }
-
-  .nav-menu {
-    left: auto;
-    width: auto;
-    height: auto;
-    position: initial;
-    flex-direction: row;
-    background: none;
-    padding: 0;
-    flex: 3;
-  }
-
-  .nav-menu li {
-    border: none;
-    width: auto;
-  }
-
-  a.nav-item {
-    font-size: 1rem;
-    line-height: normal;
-    color: #5a5a5a;
-  }
-
-  .nav-item.orange {
-    color: #ec5242;
-  }
-
-  .campaign .nav-item {
-    font-size: 0.8rem;
-    font-weight: 500;
-    color: #ec5242;
-    border: 4px solid #ec5242;
-    padding: 0.5rem;
+  main {
+    margin-top: 6rem;
   }
 
   .headline {
@@ -350,7 +234,7 @@ hr {
   .program-info {
     flex-direction: row;
     justify-content: space-between;
-    gap: 0.17rem;
+    gap: 0.5rem;
   }
 
   .program-info li {
@@ -370,12 +254,16 @@ hr {
 
   .whole-program-btn {
     display: block;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 400;
     text-transform: uppercase;
     text-underline-position: under;
     line-height: 4rem;
     color: #d3d3d3;
+  }
+
+  .whole-program-btn:hover {
+    color: var(--color-primary);
   }
 
   .featured-speakers {
@@ -390,7 +278,7 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #272a31;
+    background-color: var(--color-secondary);
     padding: 2rem 11%;
     gap: 1.5rem;
   }
@@ -413,7 +301,8 @@ hr {
   }
 
   .program-info li:hover {
-    border: 2px solid #fff;
+    transform: translateY(-5px);
+    outline: 2px solid var(--color-light);
   }
 
   footer {
@@ -456,10 +345,9 @@ hr {
 }
 
 .about-main h1 {
-  font-size: 2rem;
-  font-weight: 900;
-  color: #ec5242;
-  margin: 0.5rem 0;
+  -webkit-text-fill-color: var(--color-primary);
+  color: var(--color-primary);
+  margin: 0.5rem 0 1rem;
 }
 
 .about-main hr,
@@ -470,8 +358,8 @@ hr {
 p.about-info {
   font-size: 0.85rem;
   line-height: 1.4rem;
-  color: #5a5a5a;
-  background-color: #fff;
+  color: var(--color-secondary);
+  background-color: var(--color-light);
   border: 1px solid #d3d3d3;
   padding: 1rem 0.7rem;
   margin: 1rem 0;
@@ -482,7 +370,7 @@ p.about-info {
 p.contact {
   font-size: 0.85rem;
   line-height: 1.4rem;
-  color: #5a5a5a;
+  color: var(--color-secondary);
 }
 
 .about-main a {
@@ -491,7 +379,7 @@ p.contact {
   font-weight: 700;
   text-underline-position: under;
   line-height: 1.5rem;
-  color: #272a31;
+  color: var(--color-secondary);
 }
 
 .about-logo {
@@ -512,7 +400,7 @@ p.contact {
 .about-logo p {
   font-size: 0.85rem;
   line-height: 1.4rem;
-  color: #5a5a5a;
+  color: var(--color-secondary);
 }
 
 .logo-container {
@@ -541,7 +429,7 @@ p.contact {
 .past-events p {
   font-size: 0.85rem;
   line-height: 1.4rem;
-  color: #5a5a5a;
+  color: var(--color-secondary);
 }
 
 .images-container {
@@ -576,19 +464,19 @@ p.contact {
 
 .images-container h3 {
   font-size: 2rem;
-  color: #fff;
+  color: var(--color-light);
 }
 
 .images-container p {
   font-size: 1rem;
-  color: #fff;
+  color: var(--color-light);
 }
 
 #partner {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #272a31;
+  background-color: var(--color-secondary);
   padding: 2rem 11%;
   gap: 1.5rem;
 }
@@ -617,8 +505,12 @@ p.contact {
   padding: 2rem 12% 3rem;
 }
 
-.footer-about img {
+.footer-logo-main {
   width: 8rem;
+}
+
+.footer-logo-white {
+  display: none;
 }
 
 .footer-about h2 {
@@ -638,8 +530,9 @@ p.contact {
     padding: 4rem;
   }
 
-  .welcome,
-  #partner {
+  .about-main .welcome,
+  #partner,
+  .footer-logo-main {
     display: none;
   }
 
@@ -656,6 +549,10 @@ p.contact {
     display: flex;
     align-items: center;
     gap: 0.2rem;
+  }
+
+  .about-main span:hover {
+    color: var(--color-primary);
   }
 
   .about-main i {
@@ -682,6 +579,7 @@ p.contact {
   }
 
   .logo-container {
+    max-width: 35rem;
     padding: 1.4rem 4rem;
     margin: 1.5rem;
   }
@@ -708,14 +606,15 @@ p.contact {
     align-items: center;
     justify-content: center;
     font-size: 0.7rem;
-    background-color: #272a31;
+    background-color: var(--color-secondary);
     color: #d3d3d3;
     height: 10rem;
     padding: 0;
     gap: 2.5rem;
   }
 
-  .footer-about img {
+  .footer-logo-white {
+    display: block;
     width: 10rem;
   }
 
@@ -773,7 +672,7 @@ p.contact {
   font-size: 0.82rem;
   font-weight: 600;
   line-height: 1.2rem;
-  color: #ec5242;
+  color: var(--color-primary);
 }
 
 hr.grey-line {
