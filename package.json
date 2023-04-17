@@ -1,5 +1,5 @@
 {
-  "name": "capstone-project-1",
+  "name": "global-waqf-conference",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MNisarAli/Capstone-Project-1.git"
+    "url": "git+https://github.com/MNisarAli/Global-Waqf-Conference.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MNisarAli/Capstone-Project-1/issues"
+    "url": "https://github.com/MNisarAli/Global-Waqf-Conference/issues"
   },
-  "homepage": "https://github.com/MNisarAli/Capstone-Project-1#readme",
+  "homepage": "https://github.com/MNisarAli/Global-Waqf-Conference#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
