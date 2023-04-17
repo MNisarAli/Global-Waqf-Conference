@@ -1,3 +1,4 @@
+// Array of objects, where each object contains information about a speaker.
 const speakersInfo = [
   {
     image: './Images/Speakers/ahmed-ali-siddiquie.jpg',
@@ -37,8 +38,10 @@ const speakersInfo = [
   },
 ];
 
+// Select ul element containing the list of speakers-info.
 const speakers = document.querySelector('.speakers-info');
 
+// Loop that iterates over the speakersInfo array and generates an li element for each speaker.
 speakersInfo.forEach((speaker) => {
   const li = document.createElement('li');
   li.innerHTML = ` <div class="speaker-image">
@@ -54,12 +57,26 @@ speakersInfo.forEach((speaker) => {
   speakers.appendChild(li);
 });
 
+// Select NodeList containing all the li elements and more-speakers button.
 const speakersList = document.querySelectorAll('.speakers-info>li');
 const showMoreSpeakers = document.querySelector('.more-speakers');
+// Boolean variable that indicates whether the full list of speakers is currently displayed or not.
+let fullListDisplayed = false;
 
 showMoreSpeakers.addEventListener('click', () => {
-  for (let i = 2; i < speakersList.length; i += 1) {
-    speakersList[i].style.display = 'flex';
+  if (fullListDisplayed) {
+    // If the full list is currently displayed, show only the first two speakers.
+    for (let i = 2; i < speakersList.length; i += 1) {
+      speakersList[i].style.display = 'none';
+    }
+    showMoreSpeakers.innerHTML = 'MORE<i class="fa-solid fa-chevron-down"></i>';
+    fullListDisplayed = false;
+  } else {
+    // If only the first two speakers are currently displayed, show the full list.
+    for (let i = 2; i < speakersList.length; i += 1) {
+      speakersList[i].style.display = 'flex';
+    }
+    showMoreSpeakers.innerHTML = 'LESS<i class="fa-solid fa-chevron-up"></i>';
+    fullListDisplayed = true;
   }
-  showMoreSpeakers.style.display = 'none';
 });
