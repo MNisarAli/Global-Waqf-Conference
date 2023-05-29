@@ -57,6 +57,7 @@ body.active {
   left: -100%;
   height: 100vh;
   width: 100%;
+  max-width: 26rem;
   text-align: center;
   transition: all 0.3s ease-in-out;
   padding: 8rem 0;
@@ -84,6 +85,8 @@ a.nav-item {
 }
 
 @media screen and (min-width: 768px) {
+  /* CSS styles for tablet devices */
+
   .hamburger {
     display: none;
   }
@@ -104,13 +107,13 @@ a.nav-item {
     z-index: 1;
   }
 
-  .top-nav ul {
+  .top-nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     background-color: var(--color-secondary);
-    padding: 3px 11%;
-    gap: 1.5rem;
+    padding: 3px 10%;
+    gap: 0.7rem;
   }
 
   .top-nav a {
@@ -129,7 +132,7 @@ a.nav-item {
   }
 
   .bottom-nav {
-    padding: 9px 11%;
+    padding: 9px 10%;
   }
 
   .logo,
@@ -139,14 +142,13 @@ a.nav-item {
   }
 
   .nav-menu {
-    left: auto;
-    width: auto;
     height: auto;
     position: static;
     flex-direction: row;
     background: none;
+    max-width: 100%;
     padding: 0;
-    flex: 3;
+    flex: 4;
     pointer-events: auto;
   }
 
@@ -186,6 +188,36 @@ a.nav-item {
     font-weight: 500;
     color: var(--color-primary);
     border: 4px solid var(--color-primary);
-    padding: 0.5rem;
+    padding: 0.65rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* CSS styles for small desktop screens */
+
+  .top-nav {
+    padding: 3px 14%;
+    gap: 0.82rem;
+  }
+
+  .bottom-nav {
+    padding: 9px 14%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* CSS styles for large desktop screens */
+
+  .top-nav {
+    padding: 3px 14.5%;
+    gap: 1.1rem;
+  }
+
+  .bottom-nav {
+    padding: 9px 14.5%;
+  }
+
+  .nav-menu {
+    flex: 3.2;
   }
 }
